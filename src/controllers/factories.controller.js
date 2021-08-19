@@ -5,6 +5,7 @@ export const getFactories = async (req, res) => {
         const pool = await getConnection();
         const result = await pool.request().query(queriesFac.getAllFactories);
         res.json(result.recordset);
+        res.status(304)
     } catch (error) {
         res.status(500);
         res.send(error.message);

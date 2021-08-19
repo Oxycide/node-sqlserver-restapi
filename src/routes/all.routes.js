@@ -29,7 +29,7 @@ import {
 } from "../controllers/products.controller";
 
 import {
-  getUser
+  getLog
 } from "../controllers/login.controller";
 
 const router = Router();
@@ -82,6 +82,10 @@ router.delete("/products/:id", deleteProductById);
 
 router.put("/products/:id", updateProductById);
 
+//login
+
+router.get("/login/:username&:password", getLog)
+
 export default router;
 
-router.get("/login/:username&:password", getUser)
+

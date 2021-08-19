@@ -43,6 +43,6 @@ export const queriesPro = {
 };
 
 export const queriesLog = {
-  getUser: "SELECT * FROM [DanielDominguezDB].[dbo].[login] WHERE username = @username and password=@password"
+  getLogin: "SELECT * FROM [DanielDominguezDB].[dbo].[login] WHERE username = @username and password=@password"
 
 };
